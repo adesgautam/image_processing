@@ -1,0 +1,1 @@
+clear all;clc;pkg load image;img = imread("img1.png");figure;imshow(img);imwrite(img, "orig_erode.jpg");SE = strel('arbitrary',ones(3));eroded = imerode(img,SE);figure;imshow(eroded);imwrite(eroded, "eroded.jpg");

@@ -1,0 +1,1 @@
+clear all;clc;pkg load image;img = imread("img.png");# show originalfigure;imshow(img);imwrite(img, "orig_open.jpg");# imopen first performs erode then dilateSE = strel('rectangle',[5,5]);BW2 = imopen(img, SE);# show open opertionfigure;imshow(BW2);imwrite(BW2, "open.jpg");

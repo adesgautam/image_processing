@@ -1,0 +1,1 @@
+clear all;clc;pkg load image;img = imread("img1.png");figure;imshow(uint8(img));imwrite(img, "orig_dilate.jpg");SE = strel('arbitrary',ones(5));dilated = imdilate(img,SE);figure;imshow(dilated);imwrite(dilated, "dilated.jpg");
