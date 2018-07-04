@@ -1,2 +1,2 @@
-# image_processing
-image processing done in GNU Octave
+# Image Processing
+Image Processing in GNU Octave
